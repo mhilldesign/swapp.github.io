@@ -1,0 +1,206 @@
+/*
+
+fonts
+
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+*/
+
+
+body {
+    background: rgba(242, 231, 211, 1) 100%;
+}
+
+h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: "Instrument Serif", serif;
+    font-size: 4vw;
+    max-block-size: 60px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1C1717;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 30%;
+    height: 30px;
+    border: 3px solid #1c1717;
+    margin-right: 5%;
+}
+
+button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1c1717;
+    border: 3px solid #1c1717;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px #1c1717;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(242, 231, 211, 1);
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.search {
+    margin-bottom: 10%;
+}
+
+.description {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #1C1717;
+    font-size: 3vh;
+}
+
+.temp {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #1C1717;
+    font-size: 3vh;
+}
+
+.cityname {
+        font-family: 'Instrument Serif', serif;
+        font-size: 4.5vh;
+        color: #1C1717;
+    }
+
+
+
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        margin-top: 50%;
+        margin-bottom: 10%;
+        font-family: "Instrument Serif", serif;
+        font-size: 6vw;
+        max-block-size: 60px;
+        font-weight: 400;
+        font-style: normal;
+        color: #1C1717;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .description {
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        text-transform: capitalize;
+        color: #1C1717;
+        font-size: 2.5vh;
+    }
+
+    .cityname {
+        font-family: 'Instrument Serif', serif;
+        font-size: 4vh;
+        color: #1C1717;
+    }
+
+    .temp {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: #1C1717;
+        font-size: 2.5vh;
+    }
+
+}
