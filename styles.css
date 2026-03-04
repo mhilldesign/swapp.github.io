@@ -77,9 +77,9 @@ fonts
 
 */
 
-
 body {
-    background: rgba(242, 231, 211, 1) 100%;
+  background-color: rgba(242, 231, 211, 1);
+
 }
 
 h1 {
@@ -90,7 +90,6 @@ h1 {
     max-block-size: 60px;
     font-weight: 400;
     font-style: normal;
-    color: #1C1717;
 }
 
 .container {
@@ -105,7 +104,7 @@ input {
     font-style: normal;
     width: 30%;
     height: 30px;
-    border: 3px solid #1c1717;
+    border: 3px solid;
     margin-right: 5%;
 }
 
@@ -117,15 +116,13 @@ button {
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #1c1717;
-    border: 3px solid #1c1717;
+    border: 3px solid;
     padding: 0.25em 0.5em;
-    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px #1c1717;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    background-color: rgba(242, 231, 211, 1);
 }
 
 button:active {
@@ -142,24 +139,47 @@ button:active {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     text-transform: capitalize;
-    color: #1C1717;
     font-size: 3vh;
 }
 
 .temp {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #1C1717;
     font-size: 3vh;
 }
 
 .cityname {
         font-family: 'Instrument Serif', serif;
         font-size: 4.5vh;
-        color: #1C1717;
     }
 
+    a {
+        font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5vh;
+    text-decoration: none;
+    }
 
+    a:active {
+        text-decoration: none;
+    }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 50%;
+    position:fixed;
+    bottom: 0;
+}
+
+.footers {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5vh;
+}
 
 
 
@@ -173,7 +193,6 @@ button:active {
         max-block-size: 60px;
         font-weight: 400;
         font-style: normal;
-        color: #1C1717;
     }
 
     .container {
@@ -186,21 +205,417 @@ button:active {
         font-family: "Lato", sans-serif;
         font-weight: 300;
         text-transform: capitalize;
-        color: #1C1717;
         font-size: 2.5vh;
     }
 
     .cityname {
         font-family: 'Instrument Serif', serif;
         font-size: 4vh;
-        color: #1C1717;
     }
 
     .temp {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
-        color: #1C1717;
         font-size: 2.5vh;
     }
 
 }
+
+
+/* hamburger menu */
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 0 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #1C1717;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav ul {
+  padding: 0 15px;
+}
+
+.nav li {
+  list-style: none;
+  padding: 9px 0;
+}
+
+.nav li a {
+  color: rgba(242, 231, 211, 1);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  background-color: #1C1717;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background-color: rgba(242, 231, 211, 1);
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 520px;
+  height: 460px;
+  transform: translate(-60%,-30%);
+}
+
+.colorButton {
+    border: none;
+    font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: rgba(242, 231, 211, 1);
+        font-size: 1.5vh;
+        background-color: transparent;
+        box-shadow: none;
+        user-select: none;
+        touch-action: none;
+}
+
+.colorButton:active {
+    box-shadow: none;
+    user-select: none;
+    touch-action: none;
+}
+
+/*  default  */
+
+body.default {
+  background-color: rgba(242, 231, 211, 1);
+  color: #1C1717;
+}
+
+body.default .bar {
+    background-color: #1C1717;
+}
+
+body.default .change .bar {
+  background-color: rgba(242, 231, 211, 1);
+}
+
+body.default .menu-bg {
+    background: radial-gradient(circle, #1C1717, #1C1717);
+}
+
+/*  mint  */
+
+body.mint {
+    background-color: rgba(172, 211, 151, 1);
+}
+
+body.mint .container {
+  background-color: rgba(172, 211, 151, 1);
+  color: rgba(99, 60, 41, 1);
+}
+
+body.mint footer {
+    color: rgba(99, 60, 41, 1);
+}
+
+body.mint .bar {
+    background-color: rgba(99, 60, 41, 1);
+}
+
+body.mint .change .bar {
+  background-color: rgba(172, 211, 151, 1);
+}
+
+body.mint .menu-bg {
+    background: radial-gradient(circle, rgba(99, 60, 41, 1), rgba(99, 60, 41, 1));
+}
+
+body.mint input {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 30%;
+    height: 30px;
+    border: 3px solid rgba(99, 60, 41, 1);
+    margin-right: 5%;
+}
+
+body.mint button div.search {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid rgba(99, 60, 41, 1);
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px rgba(99, 60, 41, 1);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(172, 211, 151, 1);
+}
+
+body.mint .colorButton {
+    color: rgba(172, 211, 151, 1);
+}
+
+/*  navy  */
+
+body.navy {
+  background-color: rgba(39, 69, 115, 1);
+}
+
+body.navy  .container {
+  background-color: rgba(39, 69, 115, 1);
+  color: rgba(250, 252, 248, 1);
+}
+
+body.mint footer {
+    color: rgba(250, 252, 248, 1);
+}
+
+body.navy  .bar {
+    background-color: rgba(250, 252, 248, 1);
+}
+
+body.navy  .change .bar {
+  background-color: rgba(39, 69, 115, 1);
+}
+
+body.navy  .menu-bg {
+    background: radial-gradient(circle, rgba(250, 252, 248, 1), rgba(250, 252, 248, 1));
+}
+
+body.navy  input {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 30%;
+    height: 30px;
+    border: 3px solid rgba(250, 252, 248, 1);
+    margin-right: 5%;
+}
+
+body.navy footer {
+    color: rgba(250, 252, 248, 1);
+}
+
+body.navy footer a {
+    color:rgba(250, 252, 248, 1);
+}
+
+body.navy  button div.search {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid rgba(250, 252, 248, 1);
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px rgba(250, 252, 248, 1);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(39, 69, 115, 1);
+}
+
+body.navy  .colorButton {
+    color: rgba(39, 69, 115, 1);
+}
+
+/*  terracotta  */
+
+body.terra {
+  background-color: rgba(162, 96, 35, 1);
+}
+
+body.terra  .container {
+  background-color: rgba(162, 96, 35, 1);
+  color: rgba(34, 30, 33, 1);
+}
+
+body.terra footer {
+    color: rgba(34, 30, 33, 1);
+}
+
+body.terra .bar {
+    background-color: rgba(34, 30, 33, 1);
+}
+
+body.terra  .change .bar {
+  background-color: rgba(162, 96, 35, 1);
+}
+
+body.terra  .menu-bg {
+    background: radial-gradient(circle, rgba(34, 30, 33, 1), rgba(34, 30, 33, 1));
+}
+
+body.terra  input {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 30%;
+    height: 30px;
+    border: 3px solid rgba(34, 30, 33, 1);
+    margin-right: 5%;
+}
+
+body.terra footer {
+    color: rgba(34, 30, 33, 1);
+}
+
+body.terra footer a {
+    color:rgba(34, 30, 33, 1);
+}
+
+body.terra  button div.search {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid rgba(34, 30, 33, 1);
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px rgba(34, 30, 33, 1);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(162, 96, 35, 1);
+}
+
+body.terra  .colorButton {
+    color: rgba(162, 96, 35, 1);
+}
+
+
+body.cute {
+  background-color: rgba(248, 203, 202, 1);
+}
+
+body.cute  .container {
+  background-color: rgba(248, 203, 202, 1);
+  color: rgba(240, 142, 148, 1);
+}
+
+body.cute footer {
+    color: rgba(240, 142, 148, 1);
+}
+
+body.cute .bar {
+    background-color: rgba(240, 142, 148, 1);
+}
+
+body.cute  .change .bar {
+  background-color: rgba(248, 203, 202, 1);
+}
+
+body.cute  .menu-bg {
+    background: radial-gradient(circle, rgba(240, 142, 148, 1), rgba(240, 142, 148, 1));
+}
+
+body.cute  input {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 30%;
+    height: 30px;
+    border: 3px solid rgba(240, 142, 148, 1);
+    margin-right: 5%;
+}
+
+body.cute footer {
+    color: rgba(240, 142, 148, 1);
+}
+
+body.cute footer a {
+    color:rgba(240, 142, 148, 1);
+}
+
+body.cute  button div.search {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid rgba(240, 142, 148, 1);
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px rgba(240, 142, 148, 1);
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgba(248, 203, 202, 1);
+}
+
+body.cute .colorButton {
+    color: rgba(248, 203, 202, 1);
+}
+
+body.default .paletteItem { color: rgba(242, 231, 211, 1); }
+body.mint .paletteItem { color: rgba(172, 211, 151, 1); }
+body.navy .paletteItem { color: rgba(39, 69, 115, 1); }
+body.terra .paletteItem { color: rgba(162, 96, 35, 1); }
+body.cute .paletteItem { color: rgba(34, 30, 33, 1); }

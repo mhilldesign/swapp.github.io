@@ -2,6 +2,9 @@
  
 i used this tutorial to learn how to use apis more efficiently https://dev.to/darshil89/building-a-weather-app-a-complete-guide-to-weather-apis-and-data-visualization-15mc
 
+i edited this hamburger menu to become the color palette wheel https://codepen.io/alvarotrigo/pen/oNGzoYd
+
+
 i also made this project because i hate my weather app
 
 -->
@@ -18,6 +21,24 @@ i also made this project because i hate my weather app
 </head>
 
 <body>
+    <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><button type="button" class="colorButton paletteItem" onclick="setTheme('default')">Simple</button></li>
+      <li><button type="button" class="colorButton paletteItem" onclick="setTheme('mint')">Mint Chocolate</button></li>
+      <li><button type="button" class="colorButton paletteItem" onclick="setTheme('navy')">Snowy Blue</button></li>
+      <li><button type="button" class="colorButton paletteItem" onclick="setTheme('terra')">Terracotta</button></li>
+      <li><button type="button" class="colorButton paletteItem" onclick="setTheme('cute')">Cute</button></li>
+    </ul>
+  </nav> 
+</div>
+
+<div class="menu-bg" id="menu-bg"></div>
     <div class="container">
         <h1>Simple Weather Viewer</h1>
         <div class="search">
@@ -26,7 +47,9 @@ i also made this project because i hate my weather app
         </div>
         <div class="result" id="weatherResult"></div>
     </div>
-    
+    <footer>
+        <p class="footers"><a href="https://mhill.design">Moira Hill</a> | 2026</p>
+    </footer>
     <script src="scripts.js"></script>
 </body>
 

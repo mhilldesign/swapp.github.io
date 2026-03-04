@@ -42,6 +42,21 @@ function displayWeather(data) {
     <p class="description">
       ${weather[0].description}
     </p>
-    <p class="temp">Temperature: ${tempC.toFixed(1)} °C | ${tempF.toFixed(1)} °F</p>
+    <p class="temp">Temperature: ${tempC.toFixed(1)} °C | ~ ${tempF.toFixed(1)} °F</p>
   `;
+}
+
+
+// color schemes
+
+function setTheme(themeName) {
+    document.body.className = themeName;
+}
+
+//hamburger menu
+
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
 }
